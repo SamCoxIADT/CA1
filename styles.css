@@ -93,8 +93,8 @@
 /* Create three equal columns that sits next to each other */
 .column2 {
   flex: %;
-  max-width: 33.33%;
-  padding: 0 4px;
+  max-width: 100%;
+  padding: 0 40px;
 
 }
 
@@ -112,6 +112,7 @@
   .column2 {
     flex: 100%;
     max-width: 100%;
+
   }
 }
 
