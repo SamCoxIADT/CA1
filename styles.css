@@ -14,7 +14,11 @@
   height: 2.5rem;            /* Footer height */
 }
 
-.h1 {
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
   font-family: "Times New Roman", Times, serif;
 }
 

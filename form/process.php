@@ -4,10 +4,10 @@
     <style>
         .photo{
             width:40px;
-        }    
-        
+        }
+
     </style>
-    
+
     </head>
 <?php //opening tag
 //photo styling above should be in styling sheet
@@ -41,11 +41,11 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result)>0){
     echo "<table>";
    // echo"<tr>"
-    echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Email Address</th><th>Job Title</th><th>Date</th><th>Headline</th><th>Story Type</th><th>Story Text</th><th>Photo</th></tr>";
+    echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Email Address</th><th>Amount</th><th>Date</th><th>Headline</th><th>Story Type</th><th>Story Text</th><th>Photo</th></tr>";
     //echo"</tr>"
     while($row = mysqli_fetch_assoc($result)){
         echo "<tr>";
-        echo "<td>". $row["id"]."</td><td>". $row["first_name"]. "</td><td>". $row["last_name"]. "</td><td>". $row["email"]. "</td><td>". $row["job_title"]. "</td><td>". $row["dob"]. "</td><td>". $row["headline"]. "</td><td>". $row["story_type"]. "</td><td>". $row["story_text"]. "</td><td><img class='photo' src='images/".$row["photo"]."'></td>";
+        echo "<td>". $row["id"]."</td><td>". $row["first_name"]. "</td><td>". $row["last_name"]. "</td><td>". $row["email"]. "</td><td>". $row["amount"]. "</td><td>". $row["dob"]. "</td><td>". $row["headline"]. "</td><td>". $row["card_type"]. "</td><td>". $row["story_text"]. "</td><td><img class='photo' src='images/".$row["photo"]."'></td>";
         //echo "Email: " .$row["email"]. "<br>";
         //echo "Job Title: " .$row["job_title"]. "<br>";
         //echo "Date: " .$row["dob"]. "<br>";
@@ -56,7 +56,7 @@ if (mysqli_num_rows($result)>0){
     }
     echo "</table>";
 } else{
-    echo "0 results";    
+    echo "0 results";
 }
 mysqli_close($conn);
 echo "<br>";
