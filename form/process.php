@@ -25,7 +25,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO users (first_name, last_name, email, job_title, dob, headline,story_type, story_text) VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['emailaddress']."','".$_POST['jobtitle']."','".$_POST['date']."','".$_POST['headline']."','".$_POST['storytype']."','".$_POST['storytext']."')";
+$sql = "INSERT INTO users (first_name, last_name, email_address, amount, card_type, card_number,cvv, expiry_date, destination, story_text) VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['emailaddress']."','".$_POST['amount']."','".$_POST['cardtype']."','".$_POST['cardnumber']."','".$_POST['cvv']."','".$_POST['date']."','".$_POST['destination']."','".$_POST['storytext']."')";
 
 if (mysqli_query($conn,$sql)){
     echo "New record created successfully<br><p>";
@@ -45,7 +45,7 @@ if (mysqli_num_rows($result)>0){
     //echo"</tr>"
     while($row = mysqli_fetch_assoc($result)){
         echo "<tr>";
-        echo "<td>". $row["id"]."</td><td>". $row["first_name"]. "</td><td>". $row["last_name"]. "</td><td>". $row["email"]. "</td><td>". $row["amount"]. "</td><td>". $row["dob"]. "</td><td>". $row["headline"]. "</td><td>". $row["card_type"]. "</td><td>". $row["story_text"]. "</td><td><img class='photo' src='images/".$row["photo"]."'></td>";
+        echo "<td>". $row["id"]."</td><td>". $row["first_name"]. "</td><td>". $row["last_name"]. "</td><td>". $row["email_address"]. "</td><td>". $row["amount"]. "</td><td>". $row["card_type"]. "</td><td>". $row["cvv"]. "</td><td>". $row["expiry_date"]. "</td><td>". $row["destination"]. "</td><td>". $row["story_text"]."</td><td><img class='photo' src='images/".$row["photo"]."'></td>";
         //echo "Email: " .$row["email"]. "<br>";
         //echo "Job Title: " .$row["job_title"]. "<br>";
         //echo "Date: " .$row["dob"]. "<br>";
@@ -94,5 +94,5 @@ echo "<br>";
 //echo "Story: ";
 //echo $_POST['storytext'];
 
-?> 
+?>
 </html>

@@ -88,6 +88,58 @@ window.addEventListener("load", function(){
         }
 
 
+        if(cardType.value === ""){
+
+        //if(firstNameData === ""){
+           cardTypeError.innerHTML = "Please select a card type"; //shorthand
+
+            document.getElementById("cardType").style.borderColor = "#f44242";
+            document.getElementById("cardTypeError").style.borderColor = "#f44242";
+            submitF = false;
+        }
+        else{
+            cardType.style.borderColor = "#62f441";
+            cardTypeError.innerHTML = "&#10003;"
+            cardTypeError.style.borderColor = "#62f441";
+
+        }
+
+
+
+        if(cardNumber.value === ""){
+
+        //if(firstNameData === ""){
+           cardNumberError.innerHTML = "Please enter a number"; //shorthand
+
+            document.getElementById("cardNumber").style.borderColor = "#f44242";
+            document.getElementById("cardNumberError").style.borderColor = "#f44242";
+            submitF = false;
+        }
+        else{
+            cardNumber.style.borderColor = "#62f441";
+            cardNumberError.innerHTML = "&#10003;"
+            cardNumberError.style.borderColor = "#62f441";
+
+        }
+
+        if(cvv.value === ""){
+
+        //if(firstNameData === ""){
+           cvvError.innerHTML = "Please enter a number"; //shorthand
+
+            document.getElementById("cvv").style.borderColor = "#f44242";
+            document.getElementById("cvvError").style.borderColor = "#f44242";
+            submitF = false;
+        }
+        else{
+            cvv.style.borderColor = "#62f441";
+            cvvError.innerHTML = "&#10003;"
+            cvvError.style.borderColor = "#62f441";
+
+        }
+
+
+
         if(date.value === ""){
 
         //if(firstNameData === ""){
@@ -105,37 +157,23 @@ window.addEventListener("load", function(){
         }
 
 
-        if(headline.value === ""){
+        if(destination.value === ""){
 
         //if(firstNameData === ""){
-           headlineError.innerHTML = "Please enter a headline"; //shorthand
+           destinationError.innerHTML = "Please enter a destination"; //shorthand
 
-            document.getElementById("headline").style.borderColor = "#f44242";
-            document.getElementById("headlineError").style.borderColor = "#f44242";
+            document.getElementById("destination").style.borderColor = "#f44242";
+            document.getElementById("destinationError").style.borderColor = "#f44242";
             submitF = false;
         }
         else{
-            headline.style.borderColor = "#62f441";
-            headlineError.innerHTML = "&#10003;"
-            headlineError.style.borderColor = "#62f441";
+            destination.style.borderColor = "#62f441";
+            destinationError.innerHTML = "&#10003;"
+            destinationError.style.borderColor = "#62f441";
 
         }
 
-        if(cardType.value === ""){
 
-        //if(firstNameData === ""){
-           cardTypeError.innerHTML = "Please select a card type"; //shorthand
-
-            document.getElementById("cardType").style.borderColor = "#f44242";
-            document.getElementById("cardTypeError").style.borderColor = "#f44242";
-            submitF = false;
-        }
-        else{
-            cardType.style.borderColor = "#62f441";
-            cardTypeError.innerHTML = "&#10003;"
-            cardTypeError.style.borderColor = "#62f441";
-
-        }
 
 
         if(storyText.value === ""){
