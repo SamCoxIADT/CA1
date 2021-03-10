@@ -52,96 +52,88 @@
 
       <div class="container">
 
-          <form action="process.php" method="post">
+        <form action="process.php" method="post">
 
-              <div class="twelve row1">
-                  <p></p>
-                  <h1>Fund an adventure!</h1>
-              </div>
+          <div class="twelve row1">
+            <p></p>
+            <h1>Fund an adventure!</h1>
+          </div>
 
-              <div class="six row2a">
-                  <h3>First Name</h3>
-                  <input type="text" name="firstname" id="firstName" placeholder="First Name">
-                  <h5 class="error" id="firstNameError"></h5>
-              </div>
+          <div class="six row2a">
+            <h3>First Name</h3>
+            <input type="text" name="firstname" id="firstName" placeholder="First Name">
+            <h5 class="error" id="firstNameError"></h5>
+          </div>
 
-              <div class="six row2b">
-                  <h3>Last Name</h3>
-                  <input type="text" name="lastname" id='lastName' placeholder="Last Name">
-                  <h5 class="error" id='lastNameError'></h5>
-              </div>
+          <div class="six row2b">
+            <h3>Last Name</h3>
+            <input type="text" name="lastname" id='lastName' placeholder="Last Name">
+            <h5 class="error" id='lastNameError'></h5>
+          </div>
 
-              <div class="six row3a">
-                  <h3>Email Address</h3>
-                  <input type="text" name="emailaddress" id="emailAddress" placeholder="Email Address">
-                  <h5 class="error" id='emailAddressError'></h5>
-              </div>
+          <div class="six row3a">
+            <h3>Email Address</h3>
+            <input type="text" name="emailaddress" id="emailAddress" placeholder="Email Address">
+            <h5 class="error" id='emailAddressError'></h5>
+          </div>
 
-              <div class="six row3b">
-                  <h3>Amount</h3>
-                  <input type="text"  name="amount" id="amount" placeholder="€">
-                  <h5 class="error" id="amountError"></h5>
-              </div>
+          <div class="six row3b">
+            <h3>Amount</h3>
+            <input type="text" name="amount" id="amount" placeholder="€">
+            <h5 class="error" id="amountError"></h5>
+          </div>
 
-              <div class="six row6">
-                  <h3>Card Type</h3>
-                  <select name="cardtype" id="cardType" placeholder="Chose a card type" >
-                      <option></option>
-                      <option value="visa">Visa</option>
-                      <option value="master_card">Master Card</option>
-                      <option value="visa_debit">Visa Debit</option>
-                      <option value="master_card_debit">Master Card Debit</option>
-                  </select>
-                  <h5 class="error" id="cardTypeError"></h5>
-              </div>
+          <div class="six row6">
+            <h3>Card Type</h3>
+            <select name="cardtype" id="cardType" placeholder="Chose a card type">
+              <option></option>
+              <option value="visa">Visa</option>
+              <option value="master_card">Master Card</option>
+              <option value="visa_debit">Visa Debit</option>
+              <option value="master_card_debit">Master Card Debit</option>
+            </select>
+            <h5 class="error" id="cardTypeError"></h5>
+          </div>
 
-              <div class="twelve row4a">
-                  <h3>Card Number</h3>
-                  <input type="text"  name="cardnumber" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx">
-                  <h5 class="error" id = "cardNumberError"></h5>
-              </div>
+          <div class="twelve row4a">
+            <h3>Card Number</h3>
+            <input type="text" name="cardnumber" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx">
+            <h5 class="error" id="cardNumberError"></h5>
+          </div>
 
-              <div class="twelve row4a">
-                  <h3>CVV</h3>
-                  <input type="text"  name="cvv" id="cvv" placeholder="xxx">
-                  <h5 class="error" id = "cvvError"></h5>
-              </div>
+          <div class="twelve row4a">
+            <h3>CVV</h3>
+            <input type="text" name="cvv" id="cvv" placeholder="xxx">
+            <h5 class="error" id="cvvError"></h5>
+          </div>
 
-              <div class="six row5">
-                  <h3>Expiry Date</h3>
-                  <input type="month"  name="date" id="date" placeholder="month">
-                  <h5 class="error" id = "dateError"></h5>
-              </div>
+          <div class="six row5">
+            <h3>Expiry Date</h3>
+            <input type="month" name="date" id="date" placeholder="month">
+            <h5 class="error" id="dateError"></h5>
+          </div>
 
-              <div class="twelve row4a">
-                  <h3>Destination</h3>
-                  <input type="text"  name="destination" id="destination" placeholder="Where do you want me to go?">
-                  <h5 class="error" id = "destinationError"></h5>
-              </div>
-
-
-
-              <div class="twelve row7">
-                  <h3>Tell me about yourself and why you want to help out!</h3>
-                  <textarea name="storytext" id="storyText" placeholder="Enter your story here."></textarea>
-                  <h5 class="error" id="storyTextError"></h5>
-              </div>
-
-              <div class="six row8">
-                  <input type="submit" id="submit" value="Submit">
-                  <input type="reset"  value="Reset">
-
-              </div>
-
-          </form>
+          <div class="twelve row4a">
+            <h3>Destination</h3>
+            <input type="text" name="destination" id="destination" placeholder="Where do you want me to go?">
+            <h5 class="error" id="destinationError"></h5>
+          </div>
 
 
+
+          <div class="twelve row7">
+            <h3>Tell me about yourself and why you want to help out!</h3>
+            <textarea name="storytext" id="storyText" placeholder="Enter your story here."></textarea>
+            <h5 class="error" id="storyTextError"></h5>
+          </div>
+
+          <div class="six row8">
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+          </div>
+        </form>
       </div>
-
-
-
-
-
 
 
     </div>
