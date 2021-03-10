@@ -13,7 +13,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="css/grid.css">
+
   <link rel="stylesheet" type="text/css" href="css/mystyle.css">
   <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville" rel="stylesheet">
   <script src="js/form.js"></script>
@@ -42,92 +42,94 @@
               <a class="nav-link" href="../about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../plans.html">PLANS&nbsp&nbsp&nbsp</a>
+              <a class="nav-link" href="../plans.html">PLANS&nbsp;&nbsp;&nbsp;</a>
             </li>
-            <a class="navbar-brand" href="../links.html">LINKS</a>
+            <li>
+              <a class="navbar-brand" href="../links.html">LINKS</a>
+            </li>
           </ul>
         </div>
       </nav>
 
 
       <div class="container">
-        <div class="text-center">
+        <div class="text-center " style="background-color: red">
 
 
 
           <form action="process.php" method="post">
 
+            <div class="col-md-12 text-center">
+              <p></p>
+              <h1>Business Enquiries</h1>
+            </div>
+
+            <div class="row">
               <div class="col-md-12">
-                  <p></p>
-                  <h1>Business Enquiries</h1>
+                <h3>First Name</h3>
+                <input type="text" name="firstname" id="firstName" placeholder="First Name">
+                <h5 class="error" id="firstNameError"></h5>
               </div>
             </div>
-              <div class="justify-content-center">
-<div class ="row">
-              <div class="col-md-6">
-                  <h3>First Name</h3>
-                  <input type="text" name="firstname" id="firstName" placeholder="First Name">
-                  <h5 class="error" id="firstNameError"></h5>
-              </div>
-              </div>
-<div class ="row">
-              <div class="col-md-6">
-                  <h3>Last Name</h3>
-                  <input type="text" name="lastname" id='lastName' placeholder="Last Name">
-                  <h5 class="error" id='lastNameError'></h5>
-              </div>
-          </div>
-
-<div class ="row">
-              <div class="col-md-6">
-                  <h3>Email Address</h3>
-                  <input type="text" name="emailaddress" id="emailAddress" placeholder="Email Address">
-                  <h5 class="error" id='emailAddressError'></h5>
-              </div>
-              </div>
-
-<div class ="row">
-              <div class="col-md-6">
-                  <h3>Company Name</h3>
-                  <input type="text"  name="companyname" id="companyName" placeholder="Company Name">
-                  <h5 class="error" id = "companyNameError"></h5>
-              </div>
-              </div>
-
-
-<div class ="row">
-              <div class="col-md-6">
-                  <h3>What can I help you with?</h3>
-                  <textarea name="message" id="message" placeholder="Enter your info here."></textarea>
-                  <h5 class="error" id="messageError"></h5>
-              </div>
-              </div>
-
+            <div class="row">
               <div class="col-md-12">
-                  <input type="submit" id="submit" value="Submit">
-                  <input type="reset"  value="Reset">
-
+                <h3>Last Name</h3>
+                <input type="text" name="lastname" id='lastName' placeholder="Last Name">
+                <h5 class="error" id='lastNameError'></h5>
               </div>
             </div>
-          </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Email Address</h3>
+                <input type="text" name="emailaddress" id="emailAddress" placeholder="Email Address">
+                <h5 class="error" id='emailAddressError'></h5>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Company Name</h3>
+                <input type="text" name="companyname" id="companyName" placeholder="Company Name">
+                <h5 class="error" id="companyNameError"></h5>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3>What can I help you with?</h3>
+                <textarea name="message" id="message" placeholder="Enter your info here."></textarea>
+                <h5 class="error" id="messageError"></h5>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </div>
+            </div>
+
 
           </form>
 
 
+        </div>
+
+
+
+
+
+
+
       </div>
-
-
-
-
-
-
-
+      <footer id="footer">
+        <div class="jumbotron text-center" style="margin-top:600px">
+          <p>That's all folks! Not interested in any of the trips above? Why not check out what I'm planning HERE or sponsor a trip to somewhere you'd like to see me explore.</p>
+        </div>
+      </footer>
     </div>
-    <footer id="footer">
-      <div class="jumbotron text-center" style="margin-top:600px">
-        <p>That's all folks! Not interested in any of the trips above? Why not check out what I'm planning HERE or sponsor a trip to somewhere you'd like to see me explore.</p>
-      </div>
-    </footer>
   </div>
 </body>
 
